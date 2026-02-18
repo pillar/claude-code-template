@@ -1,22 +1,22 @@
-# Project Context & Agent Memory (Claude Code Edition)
+# Project Context & Agent Memory (Claude Code)
 
-## 🧠 Memory Architecture (3-Layer)
-This project follows a strict 3-layer memory protocol to ensure continuity:
-1. **Long-term**: This `CLAUDE.md` file (Global rules & decisions).
-2. **Buffer**: `SESSION-STATE.md` (Active task progress & context).
-3. **History**: `docs/decisions/*.md` (Detailed feature logs & post-mortems).
+## 🧠 Memory Protocol (Musk-Lean)
+1. **L1 (Long)**: `CLAUDE.md` (Rules/Decisions).
+2. **L2 (Buffer)**: `SESSION-STATE.md` (Active Progress).
+3. **L3 (History)**: `docs/decisions/` (Post-mortems).
 
-## 🛠️ Mandatory Workflows
-- **Task Start**: Always read `SESSION-STATE.md` to see if there's an unfinished run.
-- **Context Preservation**: For tasks involving >3 files or complex logic, update `SESSION-STATE.md` every 5-10 minutes or before large edits.
-- **Post-Mortem**: After completing a major feature/fix, summarize the logic and any "gotchas" into a new file in `docs/decisions/`.
-- **Compounding**: If a new "best practice" or "permanent rule" is discovered, append it to the [Rules] section in this file.
+## 🛠️ Workflows
+- **Start**: Read `SESSION-STATE.md`. No exceptions.
+- **Run**: Update `SESSION-STATE.md` every 5 min for complex tasks.
+- **Finish**: Log lessons to `docs/decisions/`.
+- **Compound**: New rules belong in [Rules] here.
 
-## 📋 Rules & Preferences
-- **Style**: Use TypeScript with strict typing. Prefer functional patterns over OOP.
-- **Communication**: Be concise. Don't explain obvious code changes.
-- **Git**: Use semantic commit messages (feat:, fix:, chore:).
-- **Safety**: Never delete large directories without confirmation. Use `trash` if available.
+## 📋 Rules (Master: Elon Musk)
+- **Deletion**: Delete every part/process you can. If you're not adding back 10%, you're not deleting enough.
+- **Code**: TS only. Pure functions. Zero fluff.
+- **Comm**: Extreme brevity. Actions > Explanations.
+- **Git**: Semantic only.
+- **Safety**: `trash` > `rm`.
 
-## 🚧 Active Session State
-(Managed by `SESSION-STATE.md`. See that file for current task status, pending items, and priority blockers.)
+## 🚧 Current State
+See `SESSION-STATE.md`.

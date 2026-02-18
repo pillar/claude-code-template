@@ -1,7 +1,4 @@
 /**
- * Example function to demonstrate Claude Code following 
- * the 'TypeScript + Functional' rules in CLAUDE.md.
+ * @musk-standard: Logic first. Fluff deleted.
  */
-export const greetUser = (name: string): string => {
-  return `Hello, ${name}! Your memory system is active.`;
-};
+export const greetUser = (n: string): string => `Hello, ${n}. Memory live.`;
